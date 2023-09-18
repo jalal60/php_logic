@@ -12,6 +12,8 @@
 // Arrow Function
 // Function Return Type
 // Function Multiple Return type.
+// Call Back Function
+// Recursive function
 
 declare(strict_types=1);
 
@@ -64,3 +66,60 @@ function myReturn($a, $b): int|float
 }
 
 echo "Return Result=" . myReturn(10, 5) + 10;
+
+//Call Back Function is a function which is passed as an argument into another function. 
+$numbers = [1,2,3,4,5,6,7,8,9,10,12];
+isEven(1);
+function isEven($n){
+    if($n % 2 == 0){
+        return true;
+    }
+    return false;
+}
+$evenNumbers = array_filter($numbers, "isEven");
+print_r($evenNumbers);
+//The array_map() function sends each value of an array to a user-made function, and returns an array with new values, given by the user-made function.
+$numbers = [1,2,3,4,5];
+function square($n){
+    return $n * $n;
+}
+$squares = array_map("square", $numbers);
+print_r($squares);
+
+//Recursive Function: the function calling itself is called a recursive function
+// Recursive First Check it's Exit point
+/*if($n == 0){
+        return;
+    }
+*/
+function recursiveCountdown($n)
+{
+    if ($n == 0) {
+        return;
+    }
+    echo "$n\n";
+    recursiveCountdown($n - 1);
+}
+recursiveCountdown(5);
+//Factrial Using Recursive Function
+function factorial($n)
+{
+    if ($n == 0) {
+        return 1;
+    }
+    return $n * factorial($n - 1);
+}
+$result = factorial(4); //4*3*2*1
+echo $result;
+// Non Recursive Factorial function
+function nonrecursiveFact($n)
+{
+    $result = 1;
+    for ($i = $n; $i > 0; $i--) {
+        $result = $result * $i;
+    }
+    echo $result;
+}
+nonrecursiveFact(5);
+
+
