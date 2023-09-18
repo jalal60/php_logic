@@ -80,9 +80,14 @@ function divide($x1, $x2)
 }
 function process($n1, $n2, $cb)
 {
-    $cb($n1, $n2);
+    if (is_callable($cb)) {
+        $cb($n1, $n2);
+    } else {
+        echo "Sorry not Call Back Function";
+    }
 }
-process(10, 20, "divide");
+process(10, 20, "multiply");
+
 //Another Call Back Fucntion Example
 $numbers = [1,2,3,4,5,6,7,8,9,10,12];
 isEven(1);
