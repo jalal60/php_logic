@@ -111,3 +111,13 @@ while($numbers!=0){
   $count++;
 }
 echo $count;
+
+// Exercise 8: Multiplication Table of 1 to 10;
+for($i=1;$i<=10;$i++){
+  echo PHP_EOL;
+  for($j=1;$j<=10;$j++){
+    $multi=$i*$j;
+    echo "$i"."X"."$j=".$multi.PHP_EOL;
+  }
+}
+
