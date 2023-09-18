@@ -69,6 +69,21 @@ function myReturn($a, $b): int|float
 echo "Return Result=" . myReturn(10, 5) + 10;
 
 //Call Back Function is a function which is passed as an argument into another function. 
+//Call Back Function Basic Example
+function add($x1, $x2)
+{
+    echo "Adding $x1 and $x2";
+}
+function divide($x1, $x2)
+{
+    echo "Divide $x1 and $x2";
+}
+function process($n1, $n2, $cb)
+{
+    $cb($n1, $n2);
+}
+process(10, 20, "divide");
+//Another Call Back Fucntion Example
 $numbers = [1,2,3,4,5,6,7,8,9,10,12];
 isEven(1);
 function isEven($n){
