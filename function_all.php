@@ -14,6 +14,7 @@
 // Function Multiple Return type.
 // Call Back Function
 // Recursive function
+// Function by Value and by Refernce
 
 declare(strict_types=1);
 
@@ -121,5 +122,16 @@ function nonrecursiveFact($n)
     echo $result;
 }
 nonrecursiveFact(5);
+
+// Function by Value and by Reference
+$personname = "Nusrat Jahan Nisat";
+function nameChange(&$name)//& use for Refernce
+{
+    $name = "Faria";
+}
+//nameChange($personname);// by Value
+nameChange($personname);//by Refence
+echo $personname;
+
 
 
