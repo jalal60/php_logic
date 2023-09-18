@@ -56,3 +56,58 @@
     echo "do while loop: $i".PHP_EOL;
 	  $i++;
 	} while($i<=10);
+
+// Exercise 1: Print the Even Number from 1 to 50
+for($i=1;$i<=50;$i++){
+  if($i%2==0){
+     echo "Even Numbe=$i".PHP_EOL;
+  }
+}
+
+// Exercise 2: Print the Odd Number from 1 to 50
+for($i=1;$i<=50;$i++){
+  if($i%2!=0){
+     echo "Odd Numbe=$i".PHP_EOL;
+  }
+}
+// Exercise 3: Print the Sum of Even Numbers from 1 to 50
+$sum=0;
+for($i=1;$i<=50;$i++){
+  if($i%2==0){
+    $sum=$sum+$i;
+    //echo "Even Numbe=$i".PHP_EOL;
+  }
+}
+echo "Sum of Even=$sum".PHP_EOL;
+
+// Exercise 4: Print the Sum of Odd Numbers from 1 to 50
+$sum=0;
+for($i=1;$i<=50;$i++){
+  if($i%2!=0){
+    $sum=$sum+$i;
+    //echo "Even Numbe=$i".PHP_EOL;
+  }
+}
+echo "Sum of Odd=$sum".PHP_EOL;
+	
+// Exercise 5: Print the Sum of Numbers from 1 to 50
+$sum=0;
+for($i=1;$i<=50;$i++){
+  $sum=$sum+$i;
+}
+echo "Sum of Number 1-50: $sum".PHP_EOL;
+
+// Exercise 6: Print the Square of Numbers from 1 to 10
+for($i=1;$i<=10;$i++){
+  $result=$i*$i;
+  echo "Square($i)=$result".PHP_EOL;
+}
+
+// Exercise 7: Count Digits in a Number (Like $numbers = 12345)
+$numbers=123456;
+$count=0;
+while($numbers!=0){
+  $numbers=(int)($numbers/10);
+  $count++;
+}
+echo $count;
