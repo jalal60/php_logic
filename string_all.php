@@ -40,7 +40,12 @@
 	//$string="Hello World";
 	//echo substr($string,0,1);
 	//echo substr($string,2); //print from 2 no. index to last character
-
+	//Live Test
+	//foreach($month as $x) {
+  	 //if (strtolower(substr($x, 0, 1))  == 'm') {
+ 	  //  print($x);
+ 	  //}
+	//}
   // //find last 5 character from string.
   // echo substr($string,-5);
   
