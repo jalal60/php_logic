@@ -28,4 +28,23 @@ if ($position !== false) {
 } else {
     echo "Not Found";
 }
+//---------------------------------------------------------
+
+//str_replace(string|array $search,string|array $replace,string|array $subject/inputstring,int $count):string
+//যদি আমরা কোন একটা স্ট্রিং এর ভিতর একটি word replace করতে চাই তাহলে str_replace($serach,$replace,$string) 
+//ব্যবহার করব।
+$string = "PHP and Framework from Ostad";
+$search = "Framework";
+$replace = "Laravel";
+$newString = str_replace($search, $replace, $string);
+echo $newString . PHP_EOL;
+
+//If we want to replace multiple word from a string then we will use strtr() mean string stranslate.
+$string2 = "Language and Framework from Ostad";
+$newString2 = strtr($string2, [
+    "Language" => "PHP",
+    "Framework" => "Laravel"
+]);
+echo $newString2;
+//------------------------------------------------------------
 
