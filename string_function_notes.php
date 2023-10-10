@@ -1,5 +1,5 @@
 <?php
-//substr(string $string, int $offset/startposition, int|null $length);
+//substr(string $string, int $offset/startposition, int|null $length):string;
 //substr() ফাংশন দ্বারা আমরা কোন string এর সাব অংশ বের করতে পারি। এখানে প্রথম ভেরিয়েবল $string 
 //পরের ভেরিয়েবল string এর প্রথম অবস্থান যা 0 থেকে শুরু হবে এবং শেষ $length ভেরিয়েবল অপশনাল
 //আমরা কয়টি ক্যারেকটার প্রিন্ট করব তা $length এ বলে দিতে পারি।
