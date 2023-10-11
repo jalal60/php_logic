@@ -7,6 +7,8 @@
     6) explode(string $separator, string $string, int $limit = PHP_INT_MAX): array
     7) implode(string $separator, array $array): string
     8) str_split(string $string, int $length = 1): array
+    9) wordwrap(string $string,int $width):string
+    10) str_shuffle(string $string): string
   */
 //substr(string $string, int $offset/startposition, int|null $length):string;
 //substr() ফাংশন দ্বারা আমরা কোন string এর সাব অংশ বের করতে পারি। এখানে প্রথম ভেরিয়েবল $string 
@@ -84,3 +86,11 @@ echo $newString2;
   // $parts=str_split($string,20); //breaking each 20 character.
   // print_r($parts);
   //---------------------------------------
+  // $string="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+  // echo wordwrap($string,20);
+//------------------------------------------------
+// //when we need Randomly shuffles a string then we will use str_shuffle($string) function
+// //This is make everytime randome generated string.
+// $string="abcdefghijk";
+// $newString=str_shuffle($string);
+//---------------------------------------
