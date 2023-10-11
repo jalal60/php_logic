@@ -3,6 +3,10 @@
     2) strpos(string $haystack,mixed $needle,int $offset=0):int
     3) str_replace(string $search,string $replace,string $inputstring,int $count):string
     4) strtr(string $string, array $replace_pairs): string
+    5) str_repeat(string $string, int $times): string
+    6) explode(string $separator, string $string, int $limit = PHP_INT_MAX): array
+    7) implode(string $separator, array $array): string
+    8) str_split(string $string, int $length = 1): array
   */
 //substr(string $string, int $offset/startposition, int|null $length):string;
 //substr() ফাংশন দ্বারা আমরা কোন string এর সাব অংশ বের করতে পারি। এখানে প্রথম ভেরিয়েবল $string 
@@ -52,4 +56,24 @@ $newString2 = strtr($string2, [
 ]);
 echo $newString2;
 //------------------------------------------------------------
+ //str_repeat is used to  repeat a string or character how much time.
+  // $character='*';
+   // for($i=10;$i>0;$i--){
+  //   echo str_repeat($character,$i).PHP_EOL;
+  // }
+  //----------------------------------------------
+  //explode() used for breaking word form sentences...
+  //we use seperator or delimeter like "" for break word when this function 
+  //found any "" into string.
+  // $string="PHP and Laravel from Ostad Team";
+  // $parts=explode(" ",$string);
+  // echo count($parts);
+  // // $parts=explode("o",$string);
+  // print_r($parts);
+  //-----------------------------------------
+  //We use implode() to gather multiple word into a string sentences.
+  // $stringParts=["PHP","&","Laravel","from","Ostad","Team"];
+  // $newString=implode(" ",$stringParts);
+  // echo $newString;
+  //---------------------------------------
 
