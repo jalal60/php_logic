@@ -1,4 +1,9 @@
 <?php
+  /*1) substr(string $string, int $offset/startposition, int|null $length):string;
+    2) strpos(string $haystack,mixed $needle,int $offset=0):int
+    3) str_replace(string $search,string $replace,string $inputstring,int $count):string
+    4) strtr(string $string, array $replace_pairs): string
+  */
 //substr(string $string, int $offset/startposition, int|null $length):string;
 //substr() ফাংশন দ্বারা আমরা কোন string এর সাব অংশ বের করতে পারি। এখানে প্রথম ভেরিয়েবল $string 
 //পরের ভেরিয়েবল string এর প্রথম অবস্থান যা 0 থেকে শুরু হবে এবং শেষ $length ভেরিয়েবল অপশনাল
@@ -38,8 +43,8 @@ $search = "Framework";
 $replace = "Laravel";
 $newString = str_replace($search, $replace, $string);
 echo $newString . PHP_EOL;
-
-//If we want to replace multiple word from a string then we will use strtr() mean string stranslate.
+//------------------------------------------------------------------
+//If we want to replace multiple word from a string then we will use strtr() mean string translate.
 $string2 = "Language and Framework from Ostad";
 $newString2 = strtr($string2, [
     "Language" => "PHP",
