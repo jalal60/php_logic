@@ -33,3 +33,14 @@ echo $arrowFun(20, 82);
 $arrowFun2 = fn () => 100;
 echo $arrowFun2();
 
+//callback function
+function hello($a)
+{
+    $a();
+    // $a();
+}
+hello(function () {
+    echo "Hello Callback Function";
+});
+
+
