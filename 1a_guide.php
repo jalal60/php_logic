@@ -7,18 +7,15 @@ function myFun(int|string|null $age, string $name, int $default = 20)
 {
     echo "Age=" . $age . "Name=" . $name . "Default=" . $default . PHP_EOL;
 }
-
 myFun(null, "Jalal", 50);
 myFun(10, "Kamal");
 
-//Function has return value with typ
+//Function has return value with type
 function sum(int $a, int $b): int
 {
     return $a + $b;
 }
-
 echo sum(25, 40);
-
 
 //Create and Assign Anonyms Function
 $demoFun = function () {
